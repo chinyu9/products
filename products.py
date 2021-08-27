@@ -8,5 +8,5 @@ while True:
 print(products)
 
 
-
-
+for p in products:
+	print(p[0], 'cost', p[1]) 
