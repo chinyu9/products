@@ -7,6 +7,9 @@ while True:
 	products.append([name, price]) # p = [name, price], # products.append(p)
 print(products)
 
-
 for p in products:
 	print(p[0], 'cost', p[1]) 
+
+with open('product.csv', 'w') as f:
+	for p in products:
+		f.write(p[0] + ',' + p[1] + '\n')
